@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.conten-cards {
+ display: flex;
+   box-shadow: 5px 5px 2.5px rgb(230, 217, 217);
+   justify-content: center;
+   align-items: center;
+   border-top: solid 5px #ffe14c ,black;
+   width: auto;
+}
+
+.cards {
+    
+    display: block;
+    margin: 5px;
+    width: 350px;
+    height: 380px;
+    transition: 3s;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 2.5px rgb(154, 137, 137);
+    margin-bottom: 50px;
+    border-radius: 10px;
+     
+    
+   
+
+}
+p{
+    text-align: center;
+    text-justify: distribute;
+    font-size: 55px;
+    margin: 10px;
+    color: white;
+   
+
+}
+p:hover{
+    text-shadow: #ff8c29;
+    
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.tarjeta {
+    width: 300px;
+    height: 190px;
+    background-color:white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-left: 30px;
+    margin-top: -20px;
+    transition: transform 0.3s ease;
+    z-index: 1;
+}
+.cards img{
+    width:80% ;
+    margin-left: 40px;
+    border-radius: 10px;
+}
+
+.tarjeta:hover {
+    transform: scale(1.05);
+}
+
+.contenido {
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+    columns: 1;
+    text-justify: auto;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 0;
+    color: #333;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+
+}
+
+
+
+.conten-card:hover> :not(:hover) {
+    opacity: -4;
+
+}
+
+@media screen and (max-width:580px) {
+    .contenedor-cards {
+        display: grid;
+        grid-template-columns: repeat(3, lfr);
+        gap: 20px;
+    }
+
+
+}
+
+
+@media screen and (max-width:480px) {
+    .conten-cards {
+        display: grid;
+        grid-template-columns: repeat(1, lfr);
+        gap: 20px;
+    }
+
+    .cards {
+       
+    }
+
+
+}
